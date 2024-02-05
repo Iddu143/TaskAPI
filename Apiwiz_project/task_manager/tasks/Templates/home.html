@@ -1,0 +1,83 @@
+<!-- tasks/templates/home.html -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav h5 {
+            margin:0;
+            text-align: left;
+            padding:2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h5>TaskAPI</h5>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <h1>Welcome to Task Manager</h1>
+    <p>This is the home page. You can navigate to the <button>
+        <a href="{% url 'task-list' %}">Task List</a></button>.</p>
+    <!-- Add more content as needed -->
+</body>
+</html> 
+
+
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+</head>
+<body>
+    <nav>
+        <h5>TaskAPI</h5>
+    </nav>
+    <h1>Welcome to Task Manager</h1>
+    <p>This is the home page. You can navigate to the <button>
+        <a href="{% url 'task-list' %}">Task List</a>.</p></button>
+</body>
+</html> {% endcomment %}
